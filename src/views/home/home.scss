@@ -1,0 +1,39 @@
+.Home {
+    display: flex;
+    &-Conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .Search {
+            display: flex;
+            font-size: 16px;
+            box-shadow: 0 8px 6px -6px black;
+            &-Hero {
+                &-Input {
+                    padding: 10px;
+                    color: black;
+                    min-width: 500px;
+                    min-height: 40px;
+                    border-radius: 5px 0px 0px 5px;
+                }
+                &-Btn {
+                    background-color: #339fff;
+                    border-color: #339fff;
+                    border-radius: 0px 5px 5px 0px;
+                    color: white;
+                    min-width: 80px;
+                    min-height: 48px;
+                }
+            }
+        }
+        .Characters {
+            margin-top: 30px;
+            &-Loading {
+                font-size: 20px;
+                font-weight: 500;
+                min-width: 100%;
+                min-height: 500px;
+            }
+        }
+    }
+}

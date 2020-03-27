@@ -1,0 +1,89 @@
+.modal {
+    background-color: white;
+    display: none;
+    position: fixed;
+    width: 45% !important;
+    height: 85% !important;
+    left: 370px !important;
+    top: 40px !important;
+    color: black;
+    box-shadow: 0px 5px 25px 4px black;
+}
+
+/* Scroll*/
+// Simple
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.Modal {
+    &-Conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        .form {
+            &-group {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                margin: 0px 30px 0px 30px;
+            }
+        }
+        .Content {
+            flex: 1 1 auto;
+        }
+        .Title {
+            display: flex;
+            margin-top: 15px;
+        }
+        .series {
+            display: flex;
+            margin-top: 10px;
+            &::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.1);
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #339fff;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: #33a0ffea;
+            }
+            &::-webkit-scrollbar-thumb:active {
+                background: #2398ff;
+            }
+        }
+        .OptionName {
+            font-size: 16px;
+        }
+        .Hero {
+            display: flex;
+            &-Description {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+            &-Helper {
+                display: flex;
+                font-size: 12px;
+                justify-content: center;
+                margin: 0px 0px 15px 0px;
+            }
+        }
+    }
+}

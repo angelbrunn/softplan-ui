@@ -1,0 +1,99 @@
+.Edit {
+    &-Conteiner {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        .Heroes {
+            &-Title {
+                font-size: 15px;
+                font-weight: 600;
+            }
+            &-List {
+                flex: 0 0 50%;
+                padding: 10px;
+                border-right: 1px solid #cdcdcd;
+                .ListHeroes {
+                    margin-top: 15px;
+                    .ItemHero {
+                        font-size: 12px;
+                        font-weight: 600;
+                        margin: 5px 0 5px 0;
+                    }
+                }
+            }
+            &-Edit {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                &-Title {
+                    flex: 0 0 10%;
+                    font-size: 15px;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: center;
+                }
+                &-Foto {
+                    justify-content: center;
+                    display: flex;
+                    margin-top: 20px;
+                    .ImgHero {
+                        height: 370px;
+                        width: 350px;
+                    }
+                }
+                &-Fields {
+                    margin: 35px 35px 0 35px;
+                    display: flex;
+                    flex-direction: column;
+                    .Name {
+                        padding: 10px;
+                        color: black;
+                        min-height: 40px;
+                        border-radius: 4px 4px 4px 4px;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    .LabelName {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    .LabelDescription {
+                        margin-top: 10px;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    .Description {
+                        padding: 10px;
+                        color: black;
+                        min-height: 40px;
+                        border-radius: 4px 4px 4px 4px;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    .Edit {
+                        margin-top: 5px;
+                        background-color: #339fff;
+                        border-color: #339fff;
+                        border-radius: 5px 5px 5px 5px;
+                        color: white;
+                        min-height: 48px;
+                        width: 40%;
+                        align-self: center;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    .ToastMenssage {
+                        display: flex !important;
+                        justify-content: center;
+                        background-color: #4caf50;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 500;
+                        max-width: 466px;
+                    }
+                }
+            }
+        }
+    }
+}

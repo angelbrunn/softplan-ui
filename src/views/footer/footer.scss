@@ -1,0 +1,13 @@
+.Footer {
+    display: flex;
+    &-Conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #339fff;
+        color: white;
+        height: 90px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
